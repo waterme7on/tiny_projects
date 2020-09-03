@@ -1,0 +1,18 @@
+Last   time
+
+
+linux version
+
+
+call trace
+
+
+Unknown product type or slotid
+
+Machine check
+
+
+peer power on
+
+
+peer power status

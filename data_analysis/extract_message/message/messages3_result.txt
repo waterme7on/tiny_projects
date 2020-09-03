@@ -1,0 +1,36 @@
+------------------------last   time---------------------
+Aug 20 08:31:32 00-b3-42-01-3b-55 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Aug 21 08:30:38 00-b3-42-01-3b-55 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+--------------------------------------------
+
+------------------------linux version---------------------
+Aug 20 08:31:05 00-b3-42-01-3b-55 kernel: Linux version 4.9.25-27.el7.1.b1.15 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #58 SMP Sun Jun 28 15:14:47 CST 2020
+Aug 21 08:30:10 00-b3-42-01-3b-55 kernel: Linux version 4.9.25-27.el7.1.b1.15 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #58 SMP Sun Jun 28 15:14:47 CST 2020
+--------------------------------------------
+
+------------------------call trace---------------------
+Can't find matched result, keyword: call trace
+--------------------------------------------
+
+------------------------unknown product type or slotid---------------------
+Can't find matched result, keyword: unknown product type or slotid
+--------------------------------------------
+
+------------------------machine check---------------------
+Can't find matched result, keyword: machine check
+--------------------------------------------
+
+------------------------peer power on---------------------
+Aug 20 08:38:01 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug 20 16:46:16 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug 21 08:54:27 00-b3-42-01-3b-55 kernel: spc received peer power on
+--------------------------------------------
+
+------------------------peer power status---------------------
+Aug 20 08:32:09 00-b3-42-01-3b-55 kernel: sas control inquiry peer power status func registered
+Aug 20 08:38:01 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug 20 16:46:16 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug 21 08:31:14 00-b3-42-01-3b-55 kernel: sas control inquiry peer power status func registered
+Aug 21 08:54:27 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+--------------------------------------------
+

@@ -1,0 +1,45 @@
+------------------------last   time---------------------
+Aug  4 08:22:55 00-b3-42-01-3b-55 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Aug  4 11:31:47 00-b3-42-01-3b-55 msodspld: Last time power down info: Spu Power Down by [ODSPPFOFF]
+Aug  4 14:25:19 00-b3-42-01-3b-55 msodspld: Last time power down info: Spu Power Down by [ODSPPRSMD]
+--------------------------------------------
+
+------------------------linux version---------------------
+Aug  4 08:22:27 00-b3-42-01-3b-55 kernel: Linux version 4.9.25-27.el7.1.b1.15 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #58 SMP Sun Jun 28 15:14:47 CST 2020
+Aug  4 11:30:19 00-b3-42-01-3b-55 kernel: Linux version 4.9.25-27.el7.1.b1.15 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #58 SMP Sun Jun 28 15:14:47 CST 2020
+Aug  4 14:24:51 00-b3-42-01-3b-55 kernel: Linux version 4.9.25-27.el7.1.b1.15 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #58 SMP Sun Jun 28 15:14:47 CST 2020
+--------------------------------------------
+
+------------------------call trace---------------------
+Can't find matched result, keyword: call trace
+--------------------------------------------
+
+------------------------unknown product type or slotid---------------------
+Can't find matched result, keyword: unknown product type or slotid
+--------------------------------------------
+
+------------------------machine check---------------------
+Can't find matched result, keyword: machine check
+--------------------------------------------
+
+------------------------peer power on---------------------
+Aug  4 09:11:46 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug  4 11:11:08 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug  4 11:22:50 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug  4 11:32:58 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug  4 14:25:58 00-b3-42-01-3b-55 kernel: spc received peer power on
+Aug  4 14:31:45 00-b3-42-01-3b-55 kernel: spc received peer power on
+--------------------------------------------
+
+------------------------peer power status---------------------
+Aug  4 08:23:31 00-b3-42-01-3b-55 kernel: sas control inquiry peer power status func registered
+Aug  4 09:11:46 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug  4 11:11:08 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug  4 11:22:50 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug  4 11:32:53 00-b3-42-01-3b-55 kernel: sas control inquiry peer power status func registered
+Aug  4 11:32:58 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug  4 14:25:54 00-b3-42-01-3b-55 kernel: sas control inquiry peer power status func registered
+Aug  4 14:25:58 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug  4 14:31:45 00-b3-42-01-3b-55 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+--------------------------------------------
+

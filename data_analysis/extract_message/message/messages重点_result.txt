@@ -1,0 +1,103 @@
+------------------------last   time---------------------
+Aug 27 17:41:19 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPRBT]
+Aug 28 08:28:30 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Aug 30 14:35:34 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Aug 31 08:29:28 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Sep  1 08:48:24 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Sep  1 14:43:05 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPPFOFF]
+Sep  1 17:34:07 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPPFOFF]
+Sep  1 17:49:15 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [HWMHRST]
+Sep  1 18:01:18 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [HWMHFOFF]
+Sep  1 18:20:05 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [HWMPRST]
+Sep  1 18:40:06 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [HWMPFOFF]
+Sep  1 18:57:40 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPPFOFF]
+Sep  2 08:25:50 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Sep  3 08:25:15 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPHNOFF]
+Sep  3 09:23:57 00-b3-42-01-19-57 msodspld: Last time power down info: Spu Power Down by [ODSPPRSMD]
+--------------------------------------------
+
+------------------------linux version---------------------
+Aug 27 17:41:04 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Aug 28 08:28:10 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Aug 30 14:35:11 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Aug 31 08:29:05 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 08:48:01 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 14:42:42 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 17:33:44 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 17:48:52 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 18:00:55 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 18:19:41 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 18:39:42 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  1 18:57:16 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  2 08:25:27 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  3 08:24:52 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+Sep  3 09:23:34 00-b3-42-01-19-57 kernel: Linux version 4.9.25-27.el7.1.b1.09 (root@PCS) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #42 SMP Wed Jul 3 18:09:27 CST 2019
+--------------------------------------------
+
+------------------------call trace---------------------
+Aug 27 19:26:34 00-b3-42-01-19-57 axis2_http_server: ODSP:MSG:(null): Failed to unlock the resource lock pid = 7547,Call Trace:
+Aug 28 19:53:29 00-b3-42-01-19-57 axis2_http_server: ODSP:MSG:(null): Failed to unlock the resource lock pid = 13914,Call Trace:
+Aug 30 19:45:33 00-b3-42-01-19-57 axis2_http_server: ODSP:MSG:(null): Failed to unlock the resource lock pid = 13943,Call Trace:
+Aug 31 18:48:24 00-b3-42-01-19-57 axis2_http_server: ODSP:MSG:(null): Failed to unlock the resource lock pid = 13946,Call Trace:
+Sep  2 19:04:01 00-b3-42-01-19-57 axis2_http_server: ODSP:MSG:(null): Failed to unlock the resource lock pid = 13952,Call Trace:
+--------------------------------------------
+
+------------------------unknown product type or slotid---------------------
+Can't find matched result, keyword: unknown product type or slotid
+--------------------------------------------
+
+------------------------machine check---------------------
+Can't find matched result, keyword: machine check
+--------------------------------------------
+
+------------------------peer power on---------------------
+Aug 27 17:41:50 00-b3-42-01-19-57 kernel: spc received peer power on
+Aug 28 08:29:02 00-b3-42-01-19-57 kernel: spc received peer power on
+Aug 30 14:36:06 00-b3-42-01-19-57 kernel: spc received peer power on
+Aug 31 08:30:00 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 08:48:56 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 14:43:37 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 17:34:39 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 17:49:50 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 18:01:50 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 18:20:40 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 18:40:38 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  1 18:58:12 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  2 08:26:22 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  3 08:25:47 00-b3-42-01-19-57 kernel: spc received peer power on
+Sep  3 09:24:42 00-b3-42-01-19-57 kernel: spc received peer power on
+--------------------------------------------
+
+------------------------peer power status---------------------
+Aug 27 17:41:46 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Aug 27 17:41:50 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug 28 08:28:57 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Aug 28 08:29:02 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug 30 14:36:02 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Aug 30 14:36:06 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Aug 31 08:29:56 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Aug 31 08:30:00 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 08:48:52 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 08:48:56 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 14:43:33 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 14:43:37 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 17:34:34 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 17:34:39 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 17:49:43 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 17:49:50 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 18:01:46 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 18:01:50 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 18:20:33 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 18:20:40 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 18:40:34 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 18:40:38 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  1 18:58:08 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  1 18:58:12 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  2 08:26:18 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  2 08:26:22 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  3 08:25:43 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  3 08:25:47 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+Sep  3 09:24:38 00-b3-42-01-19-57 kernel: sas control inquiry peer power status func registered
+Sep  3 09:24:42 00-b3-42-01-19-57 kernel: MSGPIO: peer_power_status_poll: enable ntb manually and restore peer power status
+--------------------------------------------
+
