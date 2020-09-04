@@ -215,7 +215,41 @@ int main(int argc, char *argv[]){
 					}
 				}
 				else if (strcmp(buff, "PUT") == 0) {
-					
+					// 读取文件长度
+					char msg[10];
+					read(conn_sock, msg, 10);
+					int size =  ntohl(*((int *)msg));
+					// 文件名
+					char filename[MAX_FILE_LENGTH];
+					bzero(filename, MAX_FILE_LENGTH);
+					read (conn_sock, filename, MAX_FILE_LENGTH);
+
+					printf("\t[GETTING] Get file %s size:%d\n", filename, size);
+
+
+					char *buff = (char*)malloc(size);
+					bzero(buff, size);
+
+					int downSize = size;
+					// 如果还有未读取数据则进行读取
+					if (size < 65536) {
+						read(conn_sock, buff, size+1);
+						printf("\t[GETTING] read from socket\n");
+					}
+					else{
+						while ( downSize > 0){
+							// 从socket中读取数据
+							int resp = read(conn_sock, buff, 65536);
+							buff = buff + resp;
+							downSize = downSize - resp;
+						}
+					}
+					// buff = buff - size - 1;
+					// 将读取到的数据写入对应的文件名中
+					FILE *fp = fopen(filename, "wb");
+					fwrite(buff,1,size,fp);
+					fclose(fp);
+					printf("\t[Got] File %s: %db\n", filename, size);
 				}
 			}
 			// 关闭当前连接

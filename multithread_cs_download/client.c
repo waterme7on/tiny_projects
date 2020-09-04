@@ -117,7 +117,7 @@ void *download(void* args){
 	// 初始化变量
 	struct param *p;
 	p = (struct param *) args;
-	char msg[4];
+	char msg[10];
 	// 首先接收server发送的信息
 	read(p->sock, msg, 10);
 	int size = ntohl(*((int *)msg));
@@ -253,7 +253,7 @@ int main(int argc, char *argv[]){
 	printf("Trying to connect to host\n");
 	int controlSocket = connect_host(hostname, port);
 
-	printf("Connected. Commands available: \n* list\n* get <file1> <file2> .. <fileN>\n* quit\n");
+	printf("Connected. Commands available: \n* list\n* get <file1> <file2> .. <fileN>\n* put file\n* quit\n");
 	// printf("Main TID: %d, PID: %d\n", gettid(),getpid());
 	// client输入命令
 	char initial[4];
@@ -316,6 +316,37 @@ int main(int argc, char *argv[]){
 			while ( downloadCount > 0);
 		}
 		else if ( strcmp(ch, "put") == 0){
+			ch = strtok(NULL, " ,");
+			char tmp[MAX_FILE_LENGTH];
+			strcpy(tmp, ch);
+			// 写入文件名
+			FILE *file = fopen(tmp, "rb");
+			if (!file) {
+				// 文件不存在
+				printf("File not exist: %s\n", tmp);
+			}
+			else {
+				printf("Put %s\n", tmp);
+				// 传送PUT
+				write(controlSocket, "PUT", COMMAND_LENGTH);
+				fseek(file, 0, SEEK_END);
+				// 传送文件长度
+				unsigned long fileLen =ftell(file);
+				char msg[10];
+				*((int *)msg) = htonl(fileLen);
+				write(controlSocket, msg, 10);
+				rewind(file);
+				// 传送文件名
+				write(controlSocket, tmp, MAX_FILE_LENGTH);
+
+				char *buffer = (char*)malloc(fileLen + 1);
+				fread(buffer, fileLen, 1, file);
+				fclose(file);
+				write(controlSocket, buffer, fileLen + 1);
+				printf("Sent file %s: %db\n", tmp, (int)fileLen);
+				printf("[%s]\n", buffer);
+				free(buffer);
+			}
 		}
 		else {
 			printf("No such command as: %s\n", ch);
