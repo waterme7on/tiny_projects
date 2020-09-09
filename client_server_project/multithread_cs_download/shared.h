@@ -6,5 +6,5 @@
 #define MESSAGE_LIST "LIST"
 #define MESSAGE_GET	"GETT"
 #define MESSAGE_QUIT "QUIT"
-#define FILE_SENDING_ENDED "."
+#define FILE_SENDING_ENDED "#####"
 
