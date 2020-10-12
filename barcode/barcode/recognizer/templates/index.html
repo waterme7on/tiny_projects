@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+    <div id="app">
+        <v-app id="inspire">
+            <v-main>
+                <v-container class="fill-height" fluid>
+                    <v-row align="center" justify="center">
+                        <v-col cols="12" sm="8" md="4">
+                            <v-card class="elevation-12">
+                                <v-toolbar color="primary" dark flat>
+                                    <v-toolbar-title>条形码识别</v-toolbar-title>
+                                    <v-spacer></v-spacer>
+                                </v-toolbar>
+                                <form>
+                                <!-- <form action="/recognizer/" method="post"> -->
+                                <v-card-text>
+                                    {% csrf_token %}
+                                    <v-form>
+                                        <input>
+                                        <v-text-field id="product" label="商品名称" name="product" prepend-icon="mid-home" type="text" v-model="product">
+                                        </v-text-field>
+                                        </input>
+
+                                        <v-text-field id="location" label="地点" name="location" prepend-icon="mdi-map-marker" v-model="location">
+                                        </v-text-field>
+
+                                        <v-text-field id="price" label="价格" name="price" prepend-icon="mdi-emoticon" v-model="price">
+                                        </v-text-field>
+
+                                        <v-text-field id="notes" label="备注信息" name="notes" prepend-icon="mdi-note" v-model="notes">
+                                        </v-text-field>
+
+                                        <v-file-input show-size counter multiple label="条码" id="barcode" name="barcode" prepend-icon="mdi-camera" v-model="barcode">
+                                        </v-file-input>
+                                        <v-menu ref="menu" v-model="menu" :close-on-content-click="false" :return-value.sync="date"
+                                        transition="scale-transition" offset-y min-width="290px">
+                                            <template v-slot:activator="{ on, attrs }">
+                                                <v-text-field v-model="date" label="时间" prepend-icon="mid-event" readonly v-bind="attrs"
+                                                    v-on="on" id='date' name='date'></v-text-field>
+                                            </template>
+                                            <v-date-picker v-model="date" no-title scrollable>
+                                                <v-spacer></v-spacer>
+                                                <v-btn text color="primary" @click="menu = false">Cancel</v-btn>
+                                                <v-btn text color="primary" @click="$refs.menu.save(date)">OK</v-btn>
+                                            </v-date-picker>
+                                        </v-menu>
+                                    </v-form>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" @click=submit()>提交</v-btn>
+                                </v-card-actions>
+                            </form>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-main>
+        </v-app>
+    </div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        data: () => ({
+            date: new Date().toISOString().substr(0, 10),
+            menu: false,
+            product: '',
+            price: '',
+            location: '',
+            notes: '',
+            barcode: '',
+        }),
+        methods: {
+            submit() {
+                var formdata = new FormData();
+                formdata.append('barcode', $('#barcode')[0].files[0]);
+                formdata.append('price', this.price);
+                formdata.append('location', this.location);
+                formdata.append('notes', this.notes);
+                formdata.append('date', this.date);
+                formdata.append('product', this.product);
+                $.ajax({
+                    url: "{% url 'recognizer' %}",
+                    type: 'POST',
+                    data: formdata,
+                    processData: false,
+                    contentType: false,
+                    success: function (callback) {
+                        // console.log(order_id)
+                    }
+                }).done(function (res) { alert(res); window.location.reload();
+                }).fail(function (res) {
+                });
+            }
+        }
+    })
+</script>
+</html>
